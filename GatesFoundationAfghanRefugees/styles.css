@@ -1,0 +1,208 @@
+body { 
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  color: #000;
+  background-color: #fff;
+}
+.overall-data {
+  text-align: center;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.data-item {
+  text-align: center;
+}
+
+.data-value {
+  font-size: 40px;
+  font-weight: bold;
+  color: #72A0C1;
+   /* rgba(207, 136, 130, 0.8); Pinkish/Brown color with opacity */
+}
+
+.data-label {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.container {
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.header {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.navigation {
+  display: flex;
+  padding: 1rem; /* Adjust the padding as needed */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px; /* Adjust the height of the logo as needed */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: "Tahoma", sans-serif;
+  padding: 10px;
+  position: relative;
+}
+
+.nav-links li a:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust the position of the underline as needed */
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.about {
+  border-radius: 10px; /* Add border-radius to create curved edges */
+  text-align: center;
+}
+
+.participants {
+  background-color: #fff;
+  border-radius: 10px; /* Add border-radius to create curved edges */
+}
+
+.overall-data {
+  border-radius: 10px; /* Add border-radius to create curved edges */
+}
+
+h1 {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  font-size: clamp(32px, 6vw, 56px);
+}
+
+h2 {
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  text-align: center;
+
+}
+h3{
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+section {
+  /* padding: 2rem;  */
+  /* Adjust the padding as needed */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.participants-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px; /* Adjust the gap between buttons */
+  justify-items: center; /* Center buttons horizontally */
+}
+
+.participant-button {
+  padding: 15px 20px;
+  background-color: #72A0C1;;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Tahoma", sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+  width: 100%; /* Ensure each button occupies the same width within the grid cell */
+  max-width: 200px; /* Set a maximum width for each button */
+}
+
+/* Apply hover effect to the buttons */
+.participant-button:hover {
+  background-color: #426d8c;
+}
+
+/* Apply active effect to the buttons */
+.participant-button:active {
+  transform: scale(0.95);
+}
+
+.statistics p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Tahoma", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Background image styles */
+.elementor-background-image {
+  position: relative;
+  height: 700px; /* Set the desired height here */
+  background-size: cover;
+  background-position: center center;
+}
+
+/* Slideshow overlay styles */
+.slideshow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.slideshow-overlay h1 {
+  font-size: clamp(32px, 6vw, 56px);
+  margin-bottom: 10px;
+  color: white;
+}
+
+.slideshow-overlay h2 {
+  font-size: 20px;
+  color: white;
+}
+
